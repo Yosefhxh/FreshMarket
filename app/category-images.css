@@ -1,0 +1,22 @@
+.category-image {
+  mix-blend-mode: multiply;
+  filter: contrast(1.1) saturate(1.2);
+  transition: all 0.3s ease;
+}
+
+.category-image:hover {
+  transform: scale(1.05);
+  filter: contrast(1.2) saturate(1.3);
+}
+
+/* Para imágenes con fondo blanco, aplicar un filtro más agresivo */
+.category-image.remove-white-bg {
+  mix-blend-mode: multiply;
+  filter: contrast(1.3) saturate(1.4) brightness(0.95);
+}
+
+/* Alternativa usando backdrop-filter para un efecto más suave */
+.category-card-bg {
+  background: linear-gradient(135deg, rgb(240, 253, 244) 0%, rgb(220, 252, 231) 100%);
+  backdrop-filter: blur(10px);
+}
